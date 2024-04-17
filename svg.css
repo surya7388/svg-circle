@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins" sans-serif;
+}
+body {
+  color: #fff;
+  background-color: #081b29;
+}
+.sub-tittle {
+  text-align: center;
+  font-size: 40px;
+  padding: 30px 0;
+}
+.sub-tittle span {
+  color: #0fe;
+}
+.container1 {
+  width: 600px;
+  height: 500px;
+  padding: 75px 90px;
+  margin-left: 20px;
+}
+.heading {
+  text-align: center;
+  text-decoration: underline 5px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.container1 span {
+}
+.Technical-bar {
+  font-size: 20px;
+  margin: 20px;
+}
+.bar {
+  font-size: 23px;
+}
+.Technical-bar .bar {
+  margin: 0px 0;
+}
+.Technical-bar .bar:first-child {
+  margin-top: 0px;
+}
+.Technical-bar .bar:last-child {
+  margin-top: 0px;
+}
+.info span {
+  font-size: 20px;
+  max-width: 500;
+  animation: showTeaxt 0.5s 1s linear forwards;
+}
+
+.progrees-line {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  animation: animate is cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(1);
+  transform-origin: left;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.progrees-line span {
+  height: 100%;
+  background-color: #0ef;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.progrees-line.html span {
+  width: 90%;
+}
+.progrees-line.css span {
+  width: 80%;
+}
+.progrees-line.react span {
+  width: 70%;
+}
+.progrees-line.javascript span {
+  width: 60%;
+}
+.progrees-line span::after {
+  position: absolute;
+  padding: 1px 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  top: -28px;
+  right: -20px;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+.progrees-line.html span::after {
+  content: "90%";
+}
+.progrees-line.css span::after {
+  content: "80%";
+}
+.progrees-line.javascript span::after {
+  content: "60%";
+}
+.progrees-line.react span::after {
+  content: "70%";
+}
+.progrees-line span::before{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top:-10px;
+   right: 0;
+   animation: showText 0.5s 1.5s linear forwards;
+   opacity: 0;
+
+}
+@keyframes showText{
+  100%{
+    opacity: 1;
+  }
+}
